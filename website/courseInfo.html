@@ -16,7 +16,7 @@
   <meta name="description" content="Discrete Mathematics for Computer Science">
   <meta name="author" content="Mia Minnes">
 
-  <title>CSE 20 Fall 2021</title>
+  <title>CSE 20 Spring 2022</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,505 +39,305 @@
 <body>
   <!-- Navigation Bar -->
   <div class="topnav" style="margin-left: 0%;">
-    <a href="overview_calendar.html" style="font-size: 155%;">Fall 2021 Home</a>
+    <a href="overview_calendar.html" style="font-size: 155%;">Spring 2022 Home</a>
     <div class="topnav-right">
-      <a class="active"  style="font-size: 140%;" href="courseInfo.html">Fall 2021 Course Info</a>
+      <a class="active"  style="font-size: 140%;" href="courseInfo.html">Spring 2022 Course Info</a>
     </div>
   </div>
   <!-- Overview -->
   <div class="row" style="margin-left: 5%;margin-right: 5%;">
     <h1 style="margin-top: 100px;">Discrete Math for CS
     </h1>
-    <h2>CSE 20 Fall 2021</h2>
-    <p>In this class, you will use careful mathematical modeling, problem solving, and clear and precise
-      communication to explore key questions in Computer Science. (1) How do we decide (and prove) what's true?
+    <h2>CSE 20 Spring 2022</h2>
+    <p>Welcome to CSE20! If you ever wondered "What sort of mathematics do I need for computer science?", 
+      this course will provide some of the answers. In particular, 
+      you will have the opportunity to learn basic concepts about algorithms, computer arithmetic, number systems, 
+      Boolean algebras, logic, proofs, program correctness, modular arithmetic, linear and partial orders, recurrences, 
+      and induction, amongst other things. 
+      <br>
+      In this class, you will use careful mathematical modeling, problem solving, and clear and precise communication 
+      to explore key questions in Computer Science. (1) How do we decide (and prove) what's true? 
       (2) How do we use mathematics to give multiple representations of data and computation?
     </p>
-    <p>Use our <a href="overview_calendar.html" aria-label="Go to Calendar">Calendar</a> to get links to
-      class times and notes. Submit your work for this class on
-      <a href="http://gradescope.com" aria-label="Go to Gradescope" target="_blank">Gradescope</a>.
-      Reach out to me (minnes@eng.ucsd.edu) or one of the other
-      <a href="courseInfo.html#team" aria-label="Contact a team member">CSE 20 team members</a>
-      if you have questions.
-      This term we will be using Piazza for class discussion; find our class page
-      <a href="https://piazza.com/ucsd/fall2021/cse20/home" aria-label="Go to Piazza">on Piazza</a>.
-    </p>
   </div>
-  <!-- Syllabus -->
-  <div class="row" style="margin-left: 5%;margin-right: 5%;">
-    <h2>Syllabus</h2>
-    <p>Here are our plans for CSE 20, keeping in mind we may need to be flexible
-      in response to campus and public health guidance.
-    </p>
-    <ul style="margin-left: 4%; font-size:150%;">
-      <li>We will provide all required material for this class on this website. Lecture
-        material is available in PDF and html formats so you can download and annotate or print
-        it if you'd like. In class, we'll explore concepts and work through examples.
-        Sometimes, we'll think through
-        multiple choice questions individually or in small groups so you can
-        test and deepen your understanding.
-        Other examples will be open-ended problems to practice the critical thinking and communication
-        skills we are developing in CSE 20.</li>
-      <li>Lectures are scheduled for MWF 12pm-12:50pm. Please fill out the pre-class survey
-        that was sent to your @ucsd.edu email so that we can learn about your preferences
-        and needs for lecture formats; you can also find a link to your survey on our
-        <a href="http://canvas.ucsd.edu" aria-label="Go to Canvas" target="_blank">Canvas</a> page.
-        When we meet in Galbraith Hall for the first lecture
-        of the quarter (Friday, September 24), I'll share with you the results of this survey.
-        The first day will be recorded and the recording made available on the
-        <a href="overview_calendar.html" aria-label="Go to Calendar">Calendar</a>.
-      </li>
-      <li>Review quizzes based on class material are assigned each day. These quizzes will help you
-        track and confirm your understanding of the concepts and examples we work in class.
-        Quizzes can be submitted on Gradescope as many times (with no penalty) as you like until the quiz deadline:
-        the three quizzes each week are all due on Friday (with late submission open until Sunday). </li>
-      <li>We maintain a <a href="overview_calendar.html#officehours">calendar of office hours</a>: check each listing to
-        see whether the office hours session is offered in-person or remote. Location or Zoom link
-        will be in the event description. You can also reach out to me directly by email: minnes@eng.ucsd.edu .
-        <em>I'm happy for you to address me as Prof. Minnes, Dr. Minnes,
-          and/or Mia. My pronouns are she/her/hers. Please do not use the title Ms./ Mrs. for me</em>.
-      </li>
-      <li>Discussion sections will include a review
-        of the lecture material for the week and example problems. They are
-        scheduled for Wednesdays 5pm-5:50pm in Galbraith 242.</li>
-      <li>We learn by doing: your primary out-of-class work for this class will be weekly
-        homework assignments and a project, along with a final exam. These assessments will
-        be your opportunity to practice using precise tools to represent and solve technical
-        problems and to communicate your solutions.
-      </li>
-    </ul>
+
+
+  <div class="row" style="margin-left: 5%; margin-right: 5%;">
+    <h2>(Pandemic Resilience Instruction:)</h2>
+    <p>Spring 2022 feels like the first quarter post-pandemic. We were all kind of blindsided with Omicron last quarter and so we should all be cautious about what we expect to happen. We will keep a close eye on university policies and will inform the class whenever there is a change to our class policy.</p>
+    <p>I will be giving lectures in-person. I will also offer remote support throughout the quarter. Throughout the quarter, the "in-person" lectures will be live-streamed through zoom and recorded via "podcast.ucsd.edu". The exams will be offered "in-person" or "remote" and each student can choose which type of exam they prefer. This way we can be ready for whatever lies ahead and also give students the option of how they want to interact with the class.</p>
+    <p>First and foremost is the health and safety of everyone.&nbsp; Please do not come to class if you are sick or even think you might be sick.&nbsp; It is likely that the university will be requiring masks and "symptom screeners" and/or "covid tests". We expect all students to follow the rules. With all of this in mind, we encourage all students to come to class when they can, but will also provide as much of the class materials as we can in a remotely viewable format. The lectures are designed to engage students in real time with opportunities for questions and discussions between instructor and students and also between students and other students.&nbsp; &nbsp;We will also have some ways for students who participate remotely to engage in discussions with the instructors and other students, but cannot guarantee the full experience for remote students.&nbsp;</p>
+    <p>(<strong>Personal note:<span>&nbsp;</span></strong>Last quarter (Winter 2022), we started online and returned to campus mid-quarter. After that, I ran my classes in a similar way. I am hopeful to expect that Spring quarter will be fully in person but I am a bit wary. For that reason, I have decided to continue offering the remote option for Spring 2022 mainly due to the fact that I do not know what the future will hold. There are many things about teaching remotely that I found to be great and I will try to incorporate some lessons learned from my remote teaching experience. I am excited and hopeful to teach a quarter fully "in-person". I will try my best to bring a classroom experience that is the best of both worlds.<br />-Miles Jones)&nbsp;</p>
+    <h2><span>Prerequisites</span></h2>
+    <p><span>There are no strict prerequisites but students should have a basic understanding of elementary computer programming, mathematics (algebra, geometry, trigonometry and calculus.)</span></p>
   </div>
-  <!-- Team Carousel -->
-  <div class="row" style="margin-left: 5%;margin-right: 5%;">
-    <a name="team"></a>
-    <div id="teamCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-     
 
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active" width="80%">
-          <center>
-            <p class="lead">Dr. Mia Minnes, Instructor</p>
-            <img class="d-block mx-auto" src="../resources/images/Minnes_w100.jpg" alt="" style="height:100px">
-            <br><br><br><br><br>
-          </center>
-        </div>
-
-        <div class="item" width="80%">
-          <center>
-            <p class="lead">CSE 20 Fall 2021 TAs</p>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/MananGandhi.jpg" alt="TA image"
-                  style="height:100px">
-                <figcaption>Manan Gandhi</fig>
-              </a>
-            </div>
-            
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/IMG_9301.jpeg" alt="TA image"
-                  style="height:100px">
-                <figcaption>Will Powers</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/IMG_3030.jpg" alt="TA image"
-                  style="height:100px">
-                <figcaption>Vidya Raghvendra</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/IMG_9639.jpg" alt="TA image"
-                  style="height:100px">
-                <figcaption>Huiyu Wang</fig>
-              </a>
-            </div>
-
-          </center>
-        </div>
-
-        <div class="item">
-          <center>
-            <p class="lead">CSE 20 Fall 2021 Tutors</p>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/avatarruoyu.jpg" alt="Tutor image"
-                  style="height:100px">
-                <figcaption>Ruoyu Hou</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/Profile_Photo.jpg" alt="Tutor image"
-                  style="height:100px">
-                <figcaption>Albert Li</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/IMG_5148.JPG" alt="Tutor image"
-                  style="height:100px">
-                <figcaption>Lexseal Lin</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/AlexandraMichael_Fall2017-cropped.jpg"
-                  alt="" style="height:100px">
-                <figcaption>Alexandra Michael</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/ProfilePicJPG.JPG" alt="Tutor image"
-                  style="height:100px">
-                <figcaption>Andrew Oabel</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/image_6487327.JPG" alt="Tutor image"
-                  style="height:100px">
-                <figcaption>Kyeling Ong</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/Shao.Xiyan.jpg" alt="Tutor image"
-                  style="height:100px">
-                <figcaption>Xiyan Shao</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/Fall.jpg" alt="" style="height:100px">
-                <figcaption>Pankita Tibrewala</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/Brian_profile_pic.jpg" alt="Tutor image"
-                  style="height:100px">
-                <figcaption>Brian Wang</fig>
-              </a>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-xs-4">
-              <a href="#team" class="d-block mb-4 h-100">
-                <img class="img-fluid img-thumbnail" src="../resources/images/Merlin.png" alt="Tutor image"
-                  style="height:100px">
-                <figcaption>Merlin Zhang</fig>
-              </a>
-            </div>
-
-
-          </center>
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#teamCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#teamCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+  <div class="row" style="margin-left: 5%; margin-right: 5%;">
+    <h1><span>Course Logistics:</span></h1>
+    <h2><span>Time and Location</span></h2>
+    <table style="border-collapse: collapse; width: 93.8976%; height: 284px; border-color: #843fa1;">
+      <tbody>
+          <tr style="height: 29px;">
+              <td style="width: 29.3351%; height: 29px;">Date</td>
+              <td style="width: 29.0256%; height: 29px;">Day&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+              <td style="width: 28.1143%; height: 29px;">Time</td>
+              <td style="width: 13.4521%; height: 29px;"></td>
+          </tr>
+          <tr style="height: 29px;">
+              <td style="width: 29.3351%; height: 29px;">Lecture</td>
+              <td style="width: 29.0256%; height: 29px;">Tu/Th</td>
+              <td style="width: 28.1143%; height: 29px;">11:00-12:20 (A00) &nbsp;&nbsp;</td>
+              <td style="width: 13.4521%; height: 29px;">
+                  <p>JEANN AUD</p>
+                  <p>(near peterson hall)</p>
+              </td>
+          </tr>
+          <tr style="height: 113px;">
+              <td style="width: 29.3351%; height: 113px;">Discussion Sections&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+              <td style="width: 29.0256%; height: 113px;">
+                  <p>Mondays</p>
+                  <p>(no discussion during week 1)</p>
+              </td>
+              <td style="width: 28.1143%; height: 113px;">
+                  <p>12:00-12:50 (A01)<br />1:00-1:50 (A02)<br /><br /></p>
+              </td>
+              <td style="width: 13.4521%; height: 113px;">
+                  <p>CENTER 115<br />CENTER 119<br /><br /></p>
+              </td>
+          </tr>
+          <tr style="height: 113px;">
+              <td style="width: 29.3351%; height: 113px;">Final Exam</td>
+              <td style="width: 29.0256%; height: 113px;">
+                  <p>Tuesday June 7</p>
+              </td>
+              <td style="width: 28.1143%; height: 113px;">
+                  <p>Scheduled time:</p>
+                  <p>11:30am-2:29am</p>
+                  <p>&nbsp;</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
   </div>
-  <!-- Resources -->
+
+  <!-- Lectures -->
+  <div class = "row" style="margin-left: 5%; margin-right: 5%;">
+    <h2>Lectures and review quizzes:</h2>
+<ul style= "font-size: 150%;">
+    <li>&nbsp;The lectures will be taught<em><span>&nbsp;</span>in person<span>&nbsp;</span></em>in the lecture hall on the schedule of classes (unless otherwise specified.)</li>
+    <li>The lectures will also stream on zoom in real time.</li>
+    <li>&nbsp;The lecture slides/notes will be posted before class on the content calendar link.</li>
+    <li>&nbsp;You may interrupt lecture to ask questions, make comments or express doubts (For those of you in class, you can raise your hand and for those via zoom, you can use the chat feature. There will be TAs monitoring the zoom chat.)</li>
+    <li>&nbsp;All lectures will be recorded and posted for students to watch when they want.</li>
+    <li>&nbsp;If you are in class via zoom, you are not required to have a webcam.</li>
+    <li>&nbsp;There will be a short review quiz each lecture,&nbsp; open until the Sunday of that week, with the same due date&nbsp; for&nbsp; both Tuesday and Thursday's lecture.&nbsp; You will have unlimited attempts.</li>
+</ul>
+  </div>
+
+  <!-- Instructor -->
+  <div class="row" style="margin-left: 5%; margin-right: 5%;">
+    <h2><span>Instructor and Course Staff</span></h2>
+<table dir="ltr" border="1" cellspacing="0" cellpadding="0">
+    <tbody style= "font-size: 150%;">
+        <tr>
+            <td>
+                <table style="width: 99.4126%; height: 804px;" dir="ltr" border="1" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 29px;">
+                            <td style="width: 12.7354%; height: 29px;">Name</td>
+                            <td style="width: 10.9213%; height: 29px;">Role</td>
+                            <td style="width: 19.8278%; height: 29px;">email</td>
+                            <td style="width: 13.5317%; height: 29px;">Office hours</td>
+                            <td style="width: 39.8449%; height: 29px;">Zoom link</td>
+                            <td style="width: 2.95421%; height: 29px;"></td>
+                        </tr>
+                        <tr style="height: 221px;">
+                            <td style="width: 12.7354%; height: 221px;">Miles Jones</td>
+                            <td style="width: 10.9213%; height: 221px;">Instructor</td>
+                            <td style="width: 19.8278%; height: 221px;">mej016@ucsd.edu</td>
+                            <td style="width: 13.5317%; height: 221px;">
+                                <p>&nbsp;</p>
+                            </td>
+                            <td style="width: 39.8449%; height: 221px;">
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </td>
+                            <td style="width: 2.95421%; height: 221px;">&nbsp;</td>
+                        </tr>
+                        <tr style="height: 77px;">
+                            <td style="width: 12.7354%; height: 77px;">Fatemeh Asgarinejad</td>
+                            <td style="width: 10.9213%; height: 77px;">TA</td>
+                            <td style="width: 19.8278%; height: 77px;">fasgarinejad@ucsd.edu</td>
+                            <td style="width: 13.5317%; height: 77px;"></td>
+                            <td style="width: 39.8449%; height: 77px;"></td>
+                            <td style="width: 2.95421%; height: 77px;"></td>
+                        </tr>
+                        <tr style="height: 5px;">
+                            <td style="width: 12.7354%; height: 10px;"></td>
+                            <td style="width: 10.9213%; height: 10px;"></td>
+                            <td style="width: 19.8278%; height: 10px;"></td>
+                            <td style="width: 13.5317%; height: 10px;"></td>
+                            <td style="width: 39.8449%; height: 10px;"></td>
+                            <td style="width: 2.95421%; height: 10px;"></td>
+                        </tr>
+                        <tr style="height: 113px;">
+                            <td style="width: 12.7354%; height: 113px;"></td>
+                            <td style="width: 10.9213%; height: 113px;"></td>
+                            <td style="width: 19.8278%; height: 113px;"></td>
+                            <td style="width: 13.5317%; height: 113px;"></td>
+                            <td style="width: 39.8449%; height: 113px;"></td>
+                            <td style="width: 2.95421%; height: 113px;">
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 53px;">
+                            <td style="width: 12.7354%; height: 53px;"></td>
+                            <td style="width: 10.9213%; height: 53px;"></td>
+                            <td style="width: 19.8278%; height: 53px;"></td>
+                            <td style="width: 13.5317%; height: 53px;"></td>
+                            <td style="width: 39.8449%; height: 53px;"></td>
+                            <td style="width: 2.95421%; height: 53px;">
+                                <p>&nbsp;</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 5px;">
+                            <td style="width: 12.7354%; height: 48px;"></td>
+                            <td style="width: 10.9213%; height: 48px;"></td>
+                            <td style="width: 19.8278%; height: 48px;"></td>
+                            <td style="width: 13.5317%; height: 48px;"></td>
+                            <td style="width: 39.8449%; height: 48px;"></td>
+                            <td style="width: 2.95421%; height: 48px;"></td>
+                        </tr>
+                        <tr style="height: 5px;">
+                            <td style="width: 12.7354%; height: 26px;"></td>
+                            <td style="width: 10.9213%; height: 26px;"></td>
+                            <td style="width: 19.8278%; height: 26px;"></td>
+                            <td style="width: 13.5317%; height: 26px;"></td>
+                            <td style="width: 39.8449%; height: 26px;"></td>
+                            <td style="width: 2.95421%; height: 26px;"></td>
+                        </tr>
+                        <tr style="height: 5px;">
+                            <td style="width: 12.7354%; height: 52px;"></td>
+                            <td style="width: 10.9213%; height: 52px;"></td>
+                            <td style="width: 19.8278%; height: 52px;"></td>
+                            <td style="width: 13.5317%; height: 52px;"></td>
+                            <td style="width: 39.8449%; height: 52px;"></td>
+                            <td style="width: 2.95421%; height: 52px;"></td>
+                        </tr>
+                        <tr style="height: 10px;">
+                            <td style="width: 12.7354%; height: 10px;"></td>
+                            <td style="width: 10.9213%; height: 10px;"></td>
+                            <td style="width: 19.8278%; height: 10px;"></td>
+                            <td style="width: 13.5317%; height: 10px;"></td>
+                            <td style="width: 39.8449%; height: 10px;"></td>
+                            <td style="width: 2.95421%; height: 10px;"></td>
+                        </tr>
+                        <tr style="height: 5px;">
+                            <td style="width: 12.7354%; height: 155px;"></td>
+                            <td style="width: 10.9213%; height: 155px;"></td>
+                            <td style="width: 19.8278%; height: 155px;"></td>
+                            <td style="width: 13.5317%; height: 155px;"></td>
+                            <td style="width: 39.8449%; height: 155px;"></td>
+                            <td style="width: 2.95421%; height: 155px;"></td>
+                        </tr>
+                        <tr style="height: 5px;">
+                            <td style="width: 12.7354%; height: 5px;"></td>
+                            <td style="width: 10.9213%; height: 5px;"></td>
+                            <td style="width: 19.8278%; height: 5px;"></td>
+                            <td style="width: 13.5317%; height: 5px;"></td>
+                            <td style="width: 39.8449%; height: 5px;"></td>
+                            <td style="width: 2.95421%; height: 5px;"></td>
+                        </tr>
+                        <tr style="height: 5px;">
+                            <td style="width: 12.7354%; height: 5px;"></td>
+                            <td style="width: 10.9213%; height: 5px;"></td>
+                            <td style="width: 19.8278%; height: 5px;"></td>
+                            <td style="width: 13.5317%; height: 5px;"></td>
+                            <td style="width: 39.8449%; height: 5px;"></td>
+                            <td style="width: 2.95421%; height: 5px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+  </div>
+
   <div class="row" style="margin-left: 5%;margin-right: 5%;">
     <h2>Resources</h2>
-
-    <p>We encourage you to work on homework in groups of up to three CSE 20 classmates. To find group members: reach out
-      to
-      people sitting around you in class, in discussion section, or during office hours. The pre-survey
-      also asks if you want help finding group members: the CSE 20 instructional team can help you connect with
-      other students. Working within the campus safety guidelines, you may choose to meet with your
-      group mates in person (find ideas for
-      <a href="https://students.ucsd.edu/campus-services/technology/campus-study-locations.html" target="_blank" )>
-        where to study on campus</a>), or online. If you're working with one another remotely, we highly recommend
-      meeting synchronously so that you can work through the homework problems *together*. Your @ucsd.edu account
-      gives you access to Zoom, login at <a href="https://ucsd.zoom.us/" aria-label="Go to UCSD Zoom login page"
-        target="_blank">https://ucsd.zoom.us/</a> to schedule a meeting. Pro tip:
-      if you change the meeting URL from https://ucsd.zoom.us/j/MEETING-ID to
-      https://ucsd.zoom/us/wc/join/MEETING-ID, it will allow the user to join via the browser
-      and not just through the app. The <a href="https://support.zoom.us/hc/en-us/categories/200101697"
-        target="_blank">Zoom support page</a> has details on hosting and joining meetings.
-    </p>
-
-    <h3>Textbook and supplies</h3>
-
-    <p>
-      We will provide all required material for this class on this website. 
-      There is no required textbook for this class. Lecture
-      material is available in PDF and html formats so you can download and annotate or print
-      it if you'd like. In class, we'll work through examples. Some of these examples
-      will have multiple choice questions so you can test and deepen your understanding.
-      Other examples will be open-ended problems to practice the critical thinking and communication
-      skills we are developing in CSE 20.
-    </p>
-
-    <p> Previous versions of the course used reference textbooks, including
-      <em>Discrete Mathematics and its Applications</em> by Kenneth Rosen, which
-      has <a href="http://highered.mheducation.com/sites/0073383090/student_view0">online
-        self-assessments and extra examples</a>.</li>
-    </p>
-
-    <h3>Typesetting (LaTeX) Resources</h3>
-    <p>All submitted homework for this class must be typed. Diagrams may be hand-drawn and
-      scanned and included in the typed document. You can use a word processing editor if you
-      like (Microsoft Word, Open Office, Notepad, Vim, Google Docs, etc.) but you might
-      find it useful to take this opportunity to learn LaTeX. LaTeX is a markup language used
-      widely in computer science and mathematics. The homework assignments are typed using LaTeX
-      and you can use the source files as templates for typesetting your solutions.</p>
-
-    <p>If you have never used LaTeX, we recommend cloud resources
-      that don't require you to download and install LaTeX on your local machine.
-      A good example is <a href="https://www.overleaf.com/" target="_blank" aria-label="Go to Overleaf">Overleaf</a>,
-      which has lots of <a href="https://www.overleaf.com/learn" target="_blank"
-        aria-label="Overleaf documentation">documentation</a>. Overleaf works similar to Google Docs
-      in that all members can edit the file in parallel and changes are updated in real time.
-      There is a way to directly invite group members to your document, but the free
-      version of Overleaf only allows two people to work at the same time.
-      To get around this, turn on link sharing: Click on “Share” in the top right,
-      Click “Turn on link sharing”, Copy the displayed link and share it with your group members.
-      To export your work, click on the “Download PDF” button on the right-hand side
-      If you want to export the raw source files, click on the “Menu” button in the top-left, then click on “Source”
-
-    <p>This <a href="http://en.wikibooks.org/wiki/LaTeX" target="_blank">open source LaTeX reference</a>
-      can be helpful when getting started,
-      and you can use the .tex source of all the files we use in class as templates.</p>
-
-    <p>Alternatively, you can use Google Docs, which is available through your @ucsd.edu account.
-      You can create documents and then share them with your group members with manual invites
-      or a shareable link. Google Docs has a LaTex add-on that lets you type formulas in
-      a math typesetting environment: search for "Auto-LaTeX Equations" if you want to try this option.
-      You'll need to use the display environment (start and end with $) for all the
-      portions you want rendered with LaTeX.
-    </p>
-
-    <a name="grades"></a>
-    <h2 style="line-height: 20px;"><br><br>Grading and academic integrity<br><br><br></h2>
-
-    <p>Grades in this class are designed to reflect your work and to document evidence of your learning this core
-      material. They are also designed to accommodate the ongoing impacts of the
-      pandemic and to allow flexibility in the face of uncertain public health situations.
-      By working together to explore the CSE 20 material with integrity, we can each help ensure a <b>fair</b> and
-      <b>interesting</b>
-      quarter of building the foundations needed for your continued development in Computer Science.
-      Please reach out to me (minnes@eng.ucsd.edu) if you have extenuating circumstances that you think will impede your
-      ability to participate in the planned CSE 20 activities; I'd like to work out a solution together.
-    </p>
-
-    <p>
-      The graded components for CSE 20 will be Review quizzes, Homework, Project, and Final exam.
-      Your overall grade for CSE 20 will be computed using the weights
-    <ul style="margin-left: 4%; font-size:150%;">
-      <li><a href="http://www.gradescope.com" aria-label="Go to Gradescope"><b>Review quizzes</b></a>: 
-        25% of overall score. You will need to achieve a passing grade
-        (70%) with integrity on the
-        review quiz component of this class to pass this course.<br><br>
-
-        <em>Why?</em> To help you
-        track and confirm your understanding of the concepts and examples we work in class
-        and give you immediate feedback.</em><br>
-        <em>How?</em> Quizzes can be submitted as many times (with no penalty) as you like
-        until the quiz deadline:
-        the three quizzes each week are all due on Friday (with late submission open until Sunday; 
-        no penalty for late submission of quizzes).
-        The lowest three quiz scores will not be
-        included in your overall review quiz average. You can collaborate with other CSE 20
-        students on review quizzes and you can ask questions about them in public
-        posts on Piazza and in office hours.<br><br>
-
-      </li>
-      <li><a href="assignments.html" aria-label="Go to assignments page"><b>Homework</b></a>: 30% of overall score. You will need to achieve a passing grade
-        (70%) with integrity on the homework
-        component of this class to pass this course.<br><br>
-
-        <em>Why?</em> To give you practice with the main concepts and techniques of the course, while getting to
-        know and learn from your classmates.<br>
-        <em>How?</em> Weekly homework may be done individually or in groups of up to 3 students.
-        You may switch HW partners for different HW assignments.
-        The lowest HW score will not be included in your
-        overall HW average. Please ensure your name(s) and PID(s)
-        are clearly visible on the first page of your homework
-        submission and then upload the PDF to
-        <a href="http://gradescope.com" target="_blank" aria-label="Go to Gradescope">Gradescope</a>.
-        If working in a group, <b>submit only one submission per group</b>: one partner uploads the
-        submission through their Gradescope account and then adds the other group member(s) to the Gradescope submission
-        by selecting their name(s) in the "Add Group Members" dialog box. You will need to re-add your group member(s)
-        every time you resubmit a new version of your assignment. Each homework question will be graded either for
-        <b>correctness</b> (including clear and precise explanations and justifications of all answers) or
-        <b>fair effort completeness</b>. You may only collaborate on HW with CSE 20 students in your group; if your
-        group has questions about a HW problem, you may ask in office hours or post a private
-        post (visible only to the Instructors) on Piazza.<br><br>
-      </li>
-
-      <li><a href="assignments.html" aria-label="Go to assignments page"><b>Project</b></a>: 30% of overall score. You will need to achieve a passing grade
-        (70%) with integrity on the project
-        component of this class to pass this course.<br><br>
-
-        <em>Why?</em> To go deeper and extend your work on assignments and to explore an application of your
-        choosing.<br>
-
-        <em>How?</em> During emergency remote instruction last academic year, we discovered
-        that video assessement and some open-ended personalized projects help ensure fairness
-        and can be less stressful for students than in-person midterm exams. Asynchronous project
-        submission also gives flexibility and allows more physical distancing.<br><br>
-      </li>
-      <li><a href="overview_calendar.html" aria-label="Go to class calendar"><b>Final</b></a>: 15% of overall score.</li>
-
-      <em>Why?</em> To review the entire quarter and solidify your understanding of CSE 20's foundational
-      material.</em><br>
-
-      <em>How?</em> Cumulative test on class content during exam week.
-      The exam must reflect your own independent effort. The exam may have a combination of True/False, multiple
-      choice, select-all-that-apply, and free-response questions.</em>
-    </ul>
-
-    <p>The UC San Diego Academic Integrity pledge is
-      <a href="https://academicintegrity.ucsd.edu/forms/form-pledge.html" target="_blank">here</a>.
-      Academic integrity violations will be taken seriously and reported to the campus-wide Academic Integrity Office.
-      Key facts about academic integrity related to CSE 20:
-    <ul style="margin-left: 4%; font-size:150%;">
-      <li>Use only resources explicitly allowed for each assignment. Resources not affiliated with this quarter's
-        version of the class may use inconsistent notation or definitions. If you need help, please reach out to the
-        instructor, TAs, and tutors.</li>
-      <li>Do not share written solutions or partial solutions for homework with other students in the class who are not
-        in your group. Doing so would dilute their learning experience and detract from their success in the class.</li>
-      <li>Before and during taking any individual assessment, do not attempt to obtain information about the contents of
-        the exam from students who have already taken it or from any nonauthorized source.</li>
-      <li>You may not ask for help from anyone while taking individual assessments since they are intended to reflect
-        <i>your own</i> mastery of the material. In particular, you may not collaborate on exam questions with other
-        students in the class and you may not post any portion of the exam on forums where others may assist you.
-      </li>
-      <li>After taking an exam or quiz, do not discuss its contents with anyone in the class
-        who has not yet taken it. Do not post information about it or share information about it with others who haven't
-        taken it.</li>
-    </ul>
-    </p>
-
-    <p>UCSD has fantastic resources to support your learning, with integrity. Of course, the instructional
-      team for CSE 20 is here to help you navigate the course content. The
-      <a href="http://jacobsschool.ucsd.edu/idea/" aria-label="Go to IDEA Center" target="_blank">
-        Jacobs School of Engineering IDEA Center</a> organizes group study sessions and can connect
-      you with student organizations.
-      The <a href="https://commons.ucsd.edu/" aria-label="Go to Teaching + Learning Commons" target="_blank">Teaching
-        and Learning Commons</a>
-      continues to offer their full suite of student success programs.
-    </p>
+<p>Piazza link:</p>
+<p>Gradescope link:&nbsp;<br />Gradescope code:</p>
+<p>We encourage you to work on homework in groups of up to four CSE 20 classmates. To find group members: reach out to people sitting around you in class, in discussion section, or during office hours. Working within the campus safety guidelines, you may choose to meet with your group mates in person (find ideas for<span>&nbsp;</span><a href="https://students.ucsd.edu/campus-services/technology/campus-study-locations.html" target="_blank" rel="noopener">where to study on campus</a>), or online. If you're working with one another remotely, we highly recommend meeting synchronously so that you can work through the homework problems *together*.</p>
+<h3>Textbook and supplies</h3>
+<p>Previous versions of the course used reference textbooks, including<span>&nbsp;</span><em>Discrete Mathematics and its Applications</em><span>&nbsp;</span>by Kenneth Rosen, which has<span>&nbsp;</span><a href="http://highered.mheducation.com/sites/0073383090/student_view0">online self-assessments and extra examples</a>. This quarter, I will integrate the material that has been curated by Mia Minnes and several students. The hope is that all of the material you need will be available to you through the website.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Typesetting (LaTeX) Resources</h3>
+<p>All submitted homework for this class must be typed. Diagrams may be hand-drawn and scanned and included in the typed document. You can use a word processing editor if you like (Microsoft Word, Open Office, Notepad, Vim, Google Docs, etc.) but you might find it useful to take this opportunity to learn LaTeX. LaTeX is a markup language used widely in computer science and mathematics. The homework assignments are typed using LaTeX and you can use the source files as templates for typesetting your solutions.</p>
+<p>If you have never used LaTeX, we recommend cloud resources that don't require you to download and install LaTeX on your local machine. A good example is<span>&nbsp;</span><a href="https://www.overleaf.com/" target="_blank" rel="noopener" aria-label="Go to Overleaf">Overleaf</a>, which has lots of<span>&nbsp;</span><a href="https://www.overleaf.com/learn" target="_blank" rel="noopener" aria-label="Overleaf documentation">documentation</a>. Overleaf works similar to Google Docs in that all members can edit the file in parallel and changes are updated in real time. There is a way to directly invite group members to your document, but the free version of Overleaf only allows two people to work at the same time. To get around this, turn on link sharing: Click on &ldquo;Share&rdquo; in the top right, Click &ldquo;Turn on link sharing&rdquo;, Copy the displayed link and share it with your group members. To export your work, click on the &ldquo;Download PDF&rdquo; button on the right-hand side If you want to export the raw source files, click on the &ldquo;Menu&rdquo; button in the top-left, then click on &ldquo;Source&rdquo;</p>
+<p>This<span>&nbsp;</span><a href="http://en.wikibooks.org/wiki/LaTeX" target="_blank" rel="noopener">open source LaTeX reference</a><span>&nbsp;</span>can be helpful when getting started, and you can use the .tex source of all the files we use in class as templates.</p>
+<p>Alternatively, you can use Google Docs, which is available through your @ucsd.edu account. You can create documents and then share them with your group members with manual invites or a shareable link. Google Docs has a LaTex add-on that lets you type formulas in a math typesetting environment: search for "Auto-LaTeX Equations" if you want to try this option. You'll need to use the display environment (start and end with <span>&#36;</span>) for all the portions you want rendered with LaTeX.</p>
+<p>You will be deducted 1 point per handwritten question.</p>
+<p>&nbsp;</p>
   </div>
 
 
-  <div class="row" style="margin-left: 5%;margin-right: 5%;">
-    <a name="policy"></a>
-    <h2>Policies</h2>
-
-    <h3>Regrades</h3>
-    <p>Regrades need to be requested within three days of announcement of grades. The regrade window will
-      be set in <a href="http://gradescope.com" target="_blank" aria-label="Go to Gradescope">Gradescope</a>.
-      In the regrade request, include a brief but detailed explanation of why you
-      think there was an error in the grading. A regrade request may lead to us reviewing the entire assignment and may
-      lead to the score
-      being adjusted up or down depending on any errors found in the original grading. All regrades will
-      be considered once the regrade window closes; thank you in advance for your patience while we
-      carefully look through them.</p>
-
-
-    <h3>Accommodations for students with disabilities</h3>
-    <p>We would like to work with each of you to make this course accessible
-      and approachable. All course material is available in multiple formats
-      to improve support for screen readers. Videos will also be captioned (to the
-      best of our abilities). We need to hear from you if additional accommodations
-      would improve your experience in the course.
-
-      If you have documented need for accommodations because of a disability,
-      please work with the Office for Students with Disabilities (OSD)
-      to get a current Authorization for
-      Accommodation (AFA) letter. The office is located in
-      University Center 202 behind Center Hall and also provides
-      the <a href="https://academicaffairs.ucsd.edu/sso/osdsp/home" target="_blank">OSD Student Portal</a>. We ask that
-      you work
-      to organize the AFA and to let us know about it as early in the quarter as possible
-      so that we can best support your needs.
-      For more information, see
-      <a href="http://disabilities.ucsd.edu" target="_blank" aria-label="Disability Resources at UCSD">Disability
-        Resources at UCSD</a>.
-    </p>
-
-    <h3>Class material and intellectual property</h3>
-    <p> My lectures and course materials, including videos, assignments, and
-      similar materials, are protected by U.S. copyright law and by University policy. I am the
-      exclusive owner of the copyright in those materials I create. You may take notes and make
-      copies of course materials for your own use. You may also share those materials with another
-      student who is enrolled in or auditing this course.
-      You may not reproduce, distribute or display (post/upload) lecture notes or recordings or
-      course materials in any other way — whether or not a fee is charged — without my express
-      prior written consent. You also may not allow others to do so.
-      If you do so, you may be subject to student conduct proceedings under the UC San Diego
-      Student Code of Conduct.</p>
-    <p>
-      Similarly, you own the copyright in your original work. If I am interested in
-      posting your answers or papers on the course web site, I will ask for your written permission.</p>
-
-    <h3>Solicitation</h3>
-    <p> Individuals are not permitted to approach students to offer services of any kind in exchange 
-      for pay, including tutoring services. This is considered solicitation for business and is 
-      strictly prohibited by University policy.</p>
-
-    <h3>Educational Research</h3>
-
-    <p>This class is participating in research to understand an array of specific classroom and learning experience that
-      students have in response to the pedagogical and curricular decisions instructors make and to address the
-      following research questions:</p>
-    <ul style="margin-left: 4%; font-size:150%;">
-      <li>What pedagogies lead to better learning outcomes, and for which students?</li>
-      <li>What educational practices increase the persistence and success of students, particularly those from
-        underrepresented groups?</li>
-      <li>What student practices lead to increased learning and success in real-world settings?</li>
-    </ul>
-    <p>Answers to these questions will inform teaching practice at UC San Diego, and also have the potential to
-      contribute
-      to the global knowledge base of how to improve student learning in a large university setting.
-      Specifically for this quarter, CSE 20 is participating in a project on
-      retention and sense of community in UCSD majors; see
-      <a href="../../files/CSInclusiveMentoringConsentFormNonCSEDataAnalysis.pdf" target="_blank">
-        research plan</a>.
-
-      If you consent to participate in this study, no action is needed.
-      If you DO NOT consent to participate in this study, or you choose to opt-out at any
-      time during the academic year, sign and submit this form to the research contact
-      at <a href="mailto:retentionstudy@cs.ucsd.edu">retentionstudy@cs.ucsd.edu</a>.
-    </p>
-  </div>
 
 
 
   <div class="row" style="margin-left: 5%;margin-right: 5%;">
 
-    <h2>Learning goals</h2>
-    <p>You can find the learning outcomes for CSE 20 in this
-      <a href="overview_outcome.html" aria-label="Go to Learning Outcomes Overview page">overview page</a>.
-    </p>
+    <h2>Grading and academic integrity</h2>
+    <p>Grades in this class are designed to reflect your work and to document evidence of your learning this core material. They are also designed to accommodate the ongoing impacts of the pandemic and to allow flexibility in the face of uncertain public health situations. By working together to explore the CSE 20 material with integrity, we can each help ensure a<span>&nbsp;</span><strong>fair</strong><span>&nbsp;</span>and<span>&nbsp;</span><strong>interesting</strong><span>&nbsp;</span>quarter of building the foundations needed for your continued development in Computer Science. Please reach out to me (mej016@eng.ucsd.edu) if you have extenuating circumstances that you think will impede your ability to participate in the planned CSE 20 activities; I'd like to work out a solution together.</p>
+    <p>The graded components for CSE 20 will be Review quizzes, Homework, tests, midterm, and Final exam. Your overall grade for CSE 20 will be computed using the weights</p>
+    <ul style= "font-size: 150%;">
+        <li style="list-style-type: none;">
+            <ul>
+                <li><strong>Review quizzes</strong>: 5% of overall score.<br /><br /><em>Why?</em><span>&nbsp;</span>To help you track and confirm your understanding of the concepts and examples we work in class and give you immediate feedback.<br /><em>How?</em><span>&nbsp;</span>Quizzes can be submitted as many times (with no penalty) as you like until the quiz deadline: the two quizzes each week are all due on Sunday. The lowest three quiz scores will not be included in your overall review quiz average. You can collaborate with other CSE 20 students on review quizzes and you can ask questions about them in public posts on Piazza and in office hours.
+                    <ul>
+                        <li>There will be a total of 19 review quizzes.</li>
+                        <li>You will get the full 5% if you complete 16 or more.</li>
+                        <li>For each number below 16, you will lose 1%.</li>
+                        <li>16+: 5%</li>
+                        <li>15: 4%</li>
+                        <li>14: 3%</li>
+                        <li>13: 2%</li>
+                        <li>12: 1%</li>
+                        <li>11-: 0%</li>
+                    </ul>
+                </li>
+                <li><strong>Homework</strong>: 30% of overall score.<br /><br /><em>Why?</em><span>&nbsp;</span>To give you practice with the main concepts and techniques of the course, while getting to know and learn from your classmates.<br /><em>How?</em><span>&nbsp;</span>Weekly homework may be done individually or in groups of up to 4 students. There will be 8 homework assignments. You may switch HW partners for different HW assignments. The lowest HW score will not be included in your overall HW average. Please ensure your name(s) and PID(s) are clearly visible on the first page of your homework submission and then upload the PDF to<span>&nbsp;</span><a href="http://gradescope.com/" target="_blank" rel="noopener" aria-label="Go to Gradescope">Gradescope</a>. If working in a group,<span>&nbsp;</span><strong>submit only one submission per group</strong>: one partner uploads the submission through their Gradescope account and then adds the other group member(s) to the Gradescope submission by selecting their name(s) in the "Add Group Members" dialog box. You will need to re-add your group member(s) every time you resubmit a new version of your assignment.&nbsp;You may only collaborate on HW with CSE 20 students in your group; if your group has questions about a HW problem, you may ask in office hours or post a private post (visible only to the Instructors) on Piazza.<br /><br /></li>
+                <li><strong>Tests:</strong> 10% each.<br /><br /><em>Why?</em><span>&nbsp;</span>To give you the opportunity to understand what you know and what you don't know.<br /><em>How?</em><span>&nbsp;</span>The tests will be administered on Canvas. The questions are randomly selected from a question bank. You will have 80 minutes to complete the test during the day of the test (24 hour window.) After the test results have been posted, you will have the option of doing a "re-test" where you can earn up to 1/3 the points you missed from the original test. You may openly ask for help for the "re-test" and you will have unlimited attempts throughout the weekend.</li>
+                <li><strong>Midterm:</strong> 15%<br /><br /><em>Why?</em><span>&nbsp;</span>To give us the opportunity to assess your understanding of the first half of the content.<br /><em>How?</em><span>&nbsp;</span>The midterm will be administered during the scheduled classtime (80 minutes). You have the option of doing the midterm in person or remotely. The midterm is open-notes but it is forbidden to discuss the midterm while it is happening. There will not be a "re-midterm"</li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <ul style= "font-size: 150%;">
+            <li><strong>Final</strong>: 30% of overall score.<br /><em style="color: var(--ic-brand-font-color-dark); font-family: inherit;">Why?&nbsp; T</em>o review the entire quarter and solidify your understanding of CSE 20's foundational material.</li>
+        </ul>
+    </ul>
+    <p><em style="color: var(--ic-brand-font-color-dark); font-family: inherit;">How?&nbsp; </em><span style="color: var(--ic-brand-font-color-dark); font-family: inherit;">Cumulative test on class content during exam week. The exam must reflect your own independent effort. The exam may have a combination of True/False, multiple choice, select-all-that-apply, and free-response questions.</span></p>
+    <p><strong><span style="color: #236fa1;">Grading option 2:<br />Review quizzes. 5%<br />Other HW:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30% (best 7 of 8)<br />Test 1:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;10%<br />Test 2:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;10%<br />Midterm:&nbsp; &nbsp; 0%<br />Final:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;45%</span></strong></p>
+    <p><strong><span style="color: #236fa1;">Grading option 3:<br />Review quizzes. 5%<br />Other HW:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30% (best 7 of 8)<br />Best of Test 1 and 2:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;10%<br />Midterm:&nbsp; &nbsp; 15%<br />Final:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;40%</span></strong></p>
+    <p dir="ltr"><strong>Grade Scale:&nbsp;</strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Your final grade will be based on the following scale. (You will earn the grade in the table based on your numerical score or higher.)&nbsp;</span></p>
+    <p dir="ltr"><span>&nbsp;A+&nbsp; &nbsp; &nbsp; &nbsp; A&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A-&nbsp; &nbsp; &nbsp; &nbsp; B+&nbsp; &nbsp; &nbsp; &nbsp; B&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B-&nbsp; &nbsp; &nbsp; &nbsp; C+ &nbsp; &nbsp; &nbsp; C&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C-&nbsp;</span></p>
+    <p dir="ltr"><span>&nbsp;98&nbsp; &nbsp; &nbsp; &nbsp; 93&nbsp; &nbsp; &nbsp; &nbsp; 90&nbsp; &nbsp; &nbsp; &nbsp; 86&nbsp; &nbsp; &nbsp; &nbsp; 82&nbsp; &nbsp; &nbsp; &nbsp; 78&nbsp; &nbsp; &nbsp; &nbsp; 74&nbsp; &nbsp; &nbsp; &nbsp; 70&nbsp; &nbsp; &nbsp; &nbsp; 64</span><span>&nbsp;&nbsp;</span></p>
+    <p>The UC San Diego Academic Integrity pledge is<span>&nbsp;</span><a href="https://academicintegrity.ucsd.edu/forms/form-pledge.html" target="_blank" rel="noopener">here</a>. Academic integrity violations will be taken seriously and reported to the campus-wide Academic Integrity Office. Key facts about academic integrity related to CSE 20:</p>
+    <ul style= "font-size: 150%;">
+        <li>Use only resources explicitly allowed for each assignment. Resources not affiliated with this quarter's version of the class may use inconsistent notation or definitions. If you need help, please reach out to the instructor, TAs, and tutors.</li>
+        <li>Do not share written solutions or partial solutions for homework with other students in the class who are not in your group. Doing so would dilute their learning experience and detract from their success in the class. You are free to share hints and basic techniques with others outside of your group.</li>
+        <li>Before and during taking any individual assessment, do not attempt to obtain information about the contents of the exam from students who have already taken it or from any nonauthorized source.</li>
+        <li>You may not ask for help from anyone while taking individual assessments since they are intended to reflect<span>&nbsp;</span><i>your own</i><span>&nbsp;</span>mastery of the material. In particular, you may not collaborate on exam questions with other students in the class and you may not post any portion of the exam on forums where others may assist you.</li>
+        <li>After taking an exam or quiz, do not discuss its contents with anyone in the class who has not yet taken it. Do not post information about it or share information about it with others who haven't taken it.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>UCSD has fantastic resources to support your learning, with integrity. Of course, the instructional team for CSE 20 is here to help you navigate the course content. The<span>&nbsp;</span><a href="http://jacobsschool.ucsd.edu/idea/" target="_blank" rel="noopener" aria-label="Go to IDEA Center">Jacobs School of Engineering IDEA Center</a><span>&nbsp;</span>organizes group study sessions and can connect you with student organizations. The<span>&nbsp;</span><a href="https://commons.ucsd.edu/" target="_blank" rel="noopener" aria-label="Go to Teaching + Learning Commons">Teaching and Learning Commons</a><span>&nbsp;</span>continues to offer their full suite of student success programs.</p>
+    
 
   </div>
 

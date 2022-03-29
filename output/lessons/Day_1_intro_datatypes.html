@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Day_1_intro_datatypes</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="flushright">
+
+</div>
+<h1 class="unnumbered" id="before-we-start">Before we start</h1>
+<p>If you or someone you know is suffering from food and/or housing
+insecurities there are UCSD resources here to help:</p>
+<p>Basic Needs Office: <a
+href="https://basicneeds.ucsd.edu/">https://basicneeds.ucsd.edu/</a></p>
+<p>Triton Food Pantry (in the old Student Center) is free and anonymous,
+and includes produce:</p>
+<p><a
+href="https://www.facebook.com/tritonfoodpantry/">https://www.facebook.com/tritonfoodpantry/</a></p>
+<p>Mutual Aid UCSD: <a
+href="https://mutualaiducsd.wordpress.com/">https://mutualaiducsd.wordpress.com/</a></p>
+<p>If you find yourself in an uncomfortable situation, ask for help. We
+are committed to upholding University policies regarding
+nondiscrimination, sexual violence and sexual harassment.</p>
+<p>Counseling and Psychological Services (CAPS) at 858 5343755 or <a
+href="http://caps.ucsd.edu">http://caps.ucsd.edu</a></p>
+<p>OPHD at (858) 534-8298, ophd@ucsd.edu , <a
+href="http://ophd.ucsd.edu">http://ophd.ucsd.edu</a>. CARE at Sexual
+Assault Resource Center at 858 5345793 sarc@ucsd.edu <a
+href="http://care.ucsd.edu">http://care.ucsd.edu</a></p>
+<h2 class="unnumbered" id="pandemic-resilient-instruction">Pandemic
+resilient instruction</h2>
+<p>Spring 2022 feels like the first quarter post-pandemic. We were all
+kind of blindsided with Omicron last quarter and so we should all be
+cautious about what we expect to happen. We will keep a close eye on
+university policies and will inform the class whenever there is a change
+to our class policy.</p>
+<p>I will be giving lectures in-person. I will also offer remote support
+throughout the quarter. Throughout the quarter, the "in-person" lectures
+will be live-streamed through zoom and recorded via "podcast.ucsd.edu".
+The exams will be offered "in-person" or "remote" and each student can
+choose which type of exam they prefer. This way we can be ready for
+whatever lies ahead and also give students the option of how they want
+to interact with the class.</p>
+<p>First and foremost is the health and safety of everyone. Please do
+not come to class if you are sick or even think you might be sick. It is
+likely that the university will be requiring masks and "symptom
+screeners" and/or "covid tests". We expect all students to follow the
+rules. With all of this in mind, we encourage all students to come to
+class when they can, but will also provide as much of the class
+materials as we can in a remotely viewable format. The lectures are
+designed to engage students in real time with opportunities for
+questions and discussions between instructor and students and also
+between students and other students. We will also have some ways for
+students who participate remotely to engage in discussions with the
+instructors and other students, but cannot guarantee the full experience
+for remote students.</p>
+<p>(Personal note: Last quarter (Winter 2022), we started online and
+returned to campus mid-quarter. After that, I ran my classes in a
+similar way. I am hopeful to expect that Spring quarter will be fully in
+person but I am a bit wary. For that reason, I have decided to continue
+offering the remote option for Spring 2022 mainly due to the fact that I
+do not know what the future will hold. There are many things about
+teaching remotely that I found to be great and I will try to incorporate
+some lessons learned from my remote teaching experience. I am excited
+and hopeful to teach a quarter fully "in-person". I will try my best to
+bring a classroom experience that is the best of both worlds. -Miles
+Jones)</p>
+<p>Welcome to CSE 20: Discrete Math for Computer Science in Fall
+2021!</p>
+<h1 class="unnumbered" id="themes-and-applications-for-cse-20">Themes
+and applications for CSE 20</h1>
+<ul>
+<li><p><span><strong>Technical skepticism</strong></span>: Know, select
+and apply appropriate computing knowledge and problem-solving
+techniques. Reason about computation and systems. Use mathematical
+techniques to solve problems. Determine appropriate conceptual tools to
+apply to new situations. Know when tools do not apply and try different
+approaches. Critically analyze and evaluate candidate
+solutions.</p></li>
+<li><p><span><strong>Multiple representations</strong></span>:
+Understand, guide, shape impact of computing on society/the world.
+Connect the role of Theory CS classes to other applications (in
+undergraduate CS curriculum and beyond). Model problems using
+appropriate mathematical concepts. Clearly and unambiguously communicate
+computational ideas using appropriate formalism. Translate across levels
+of abstraction.</p></li>
+</ul>
+<p><span><strong>Applications</strong></span>: Numbers (how to represent
+them and use them in Computer Science), Recommendation systems and their
+roots in machine learning (with applications like Netflix), “Under the
+hood" of computers (circuits, pixel color representation, data
+structures), Codes and information (secret message sharing and error
+correction), Bioinformatics algorithms and genomics (DNA and RNA).</p>
+<h1 class="unnumbered" id="introductions">Introductions</h1>
+<p>Class website: There is a link to a class website from my homepage:
+<a
+href="https://cseweb.ucsd.edu/~mej016/">https://cseweb.ucsd.edu/~mej016/</a></p>
+<p>I am also using Canvas as a website.</p>
+<p>(I am transitioning from Canvas to a new resource that the department
+has been developing. It has been initiated by Mia Minnes and Joe Politz
+with help from Aiko Coanaya and Akanksha Pandey.)</p>
+<p><span><strong>Pro-tip</strong></span>: you can use MATH109 to replace
+CSE20 for prerequisites and other requirements.</p>
+<p>Instructor: Miles Jones</p>
+<p>Our team: Five TAs and 8 tutors + all of you</p>
+<p>On a typical week: <span><strong>TuTh</strong></span> Lectures +
+review quizzes, <span><strong>W</strong></span> HW due,
+<span><strong>M</strong></span> Discussion, office hours, Piazza. Tests
+and Midterms see the content calendar.</p>
+<h1 class="unnumbered" id="tuesday-march-29">Tuesday March 29</h1>
+<p>What data should we encode about each Netflix account holder to help
+us make effective recommendations?</p>
+<p>In machine learning, clustering can be used to group similar data for
+prediction and recommendation. For example, each Netflix user’s viewing
+history can be represented as a <span
+class="math inline">\(n\)</span>-tuple indicating their preferences
+about movies in the database, where <span
+class="math inline">\(n\)</span> is the number of movies in the
+database. People with similar tastes in movies can then be clustered to
+provide recommendations of movies for one another. Mathematically,
+clustering is based on a notion of distance between pairs of <span
+class="math inline">\(n\)</span>-tuples.</p>
+<p>In the table below, each row represents a user’s ratings of movies:
+ (check) indicates the person liked the movie,  (x) that they didn’t,
+and <span class="math inline">\(\bullet\)</span> (dot) that they didn’t
+rate it one way or another (neutral rating or didn’t watch). Can encode
+these ratings numerically with <span class="math inline">\(1\)</span>
+for  (check), <span class="math inline">\(-1\)</span> for  (x), and
+<span class="math inline">\(0\)</span> for <span
+class="math inline">\(\bullet\)</span> (dot).</p>
+<div class="center">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Person</th>
+<th style="text-align: center;">Fyre</th>
+<th style="text-align: center;">Frozen II</th>
+<th style="text-align: center;">Picard</th>
+<th style="text-align: center;">Ratings written as a <span
+class="math inline">\(3\)</span>-tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(P_1\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span
+class="math inline">\(\bullet\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span
+class="math inline">\(P_2\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(P_3\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span
+class="math inline">\(P_4\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(\bullet\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span><strong>Conclusion</strong></span>: Modeling involves choosing
+data types to represent and organize data</p>
+<h2 class="unnumbered" id="discrete-math-vs-continuous-math">Discrete
+Math vs Continuous Math</h2>
+<div class="multicols">
+<p><span>2</span> <span><strong>Continuous Math</strong></span><br />
+<img src="../../resources/images/dog_ramp.jpg" alt="image" /> <a
+href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F91W-Wq9XovL._AC_SL1500_.jpg&amp;imgrefurl=https%3A%2F%2Fwww.amazon.com%2FSolvit-62399-Wood-Bedside-Ramp%2Fdp%2FB00JKEW9DI&amp;tbnid=2NJ4eF-687YNpM&amp;vet=12ahUKEwid55iOp5b1AhVG0FMKHW28Bl0QMygUegUIARCpBA..i&amp;docid=ILQVJ-0AB1zezM&amp;w=1500&amp;h=1000&amp;q=dog%20bed%20ramp&amp;ved=2ahUKEwid55iOp5b1AhVG0FMKHW28Bl0QMygUegUIARCpBA">image
+reference</a><br />
+Continuous math is the study of the <em>real number line</em><br />
+What are some subjects that would be considered as continuous math?</p>
+<p><span><strong>Discrete Math</strong></span><br />
+<img src="../../resources/images/dog_stairs.jpg" alt="image" /> <a
+href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F41IAfR4glVL._AC_UL200_SR200%2C200_.jpg&amp;imgrefurl=https%3A%2F%2Fwww.amazon.com%2FBest-Sellers-Pet-Supplies-Dog-Stairs-Steps%2Fzgbs%2Fpet-supplies%2F2975332011&amp;tbnid=YdaajUVDeFbHTM&amp;vet=10CEwQMyjwAWoXChMIkLO_4KeW9QIVAAAAAB0AAAAAEAc..i&amp;docid=xqzoy3qBGJdNcM&amp;w=200&amp;h=200&amp;q=dog%20bed%20stairs&amp;ved=0CEwQMyjwAWoXChMIkLO_4KeW9QIVAAAAAB0AAAAAEAc">image
+reference</a><br />
+Discrete math deals with distinct objects (like the integers.)<br />
+What are some subjects that would be considered as discrete math?</p>
+</div>
+<p><span><strong>Math and computer science.</strong></span></p>
+<p>What are some ways that math is used in computer science?</p>
+<h2 class="unnumbered" id="notation-and-prerequisites">Notation and
+prerequisites</h2>
+<div class="center">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span><strong>Term</strong></span></th>
+<th style="text-align: left;"><span><strong>Notation
+Example(s)</strong></span></th>
+<th style="text-align: left;"><span><strong>We say in English
+…</strong></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">sequence</td>
+<td style="text-align: left;"><span class="math inline">\(x_1, \ldots,
+x_n\)</span></td>
+<td style="text-align: left;">A sequence <span
+class="math inline">\(x_1\)</span> to <span
+class="math inline">\(x_n\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">summation</td>
+<td style="text-align: left;"><span class="math inline">\(\sum_{i=1}^n
+x_i\)</span> or <span class="math inline">\(\displaystyle{\sum_{i=1}^n
+x_i}\)</span></td>
+<td style="text-align: left;">The sum of the terms of the sequence <span
+class="math inline">\(x_1\)</span> to <span
+class="math inline">\(x_n\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">all reals</td>
+<td style="text-align: left;"><span
+class="math inline">\(\mathbb{R}\)</span></td>
+<td style="text-align: left;">The (set of all) real numbers (numbers on
+the number line)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">all integers</td>
+<td style="text-align: left;"><span
+class="math inline">\(\mathbb{Z}\)</span></td>
+<td style="text-align: left;">The (set of all) integers (whole numbers
+including negatives, zero, and positives)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">all positive integers</td>
+<td style="text-align: left;"><span
+class="math inline">\(\mathbb{Z}^+\)</span></td>
+<td style="text-align: left;">The (set of all) strictly positive
+integers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">all natural numbers</td>
+<td style="text-align: left;"><span
+class="math inline">\(\mathbb{N}\)</span> or <span
+class="math inline">\(\mathbb{Z}^{\geq 0}\)</span></td>
+<td style="text-align: left;">The (set of all) natural numbers.
+<span><strong>Note</strong></span>: we use the convention that <span
+class="math inline">\(0\)</span> is a natural number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">piecewise rule definition</td>
+<td style="text-align: left;"><span class="math inline">\(f(x) =
+\begin{cases} x &amp; \text{if~}x \geq 0 \\ -x &amp;
+\text{if~}x&lt;0\end{cases}\)</span></td>
+<td style="text-align: left;">Define <span
+class="math inline">\(f\)</span> of <span
+class="math inline">\(x\)</span> to be <span
+class="math inline">\(x\)</span> when <span
+class="math inline">\(x\)</span> is nonnegative and to be <span
+class="math inline">\(-x\)</span> when <span
+class="math inline">\(x\)</span> is negative</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">function application</td>
+<td style="text-align: left;"><span
+class="math inline">\(f(7)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f\)</span> of
+<span class="math inline">\(7\)</span> <span><strong>or</strong></span>
+<span class="math inline">\(f\)</span> applied to <span
+class="math inline">\(7\)</span> <span><strong>or</strong></span> the
+image of <span class="math inline">\(7\)</span> under <span
+class="math inline">\(f\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span
+class="math inline">\(f(z)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f\)</span> of
+<span class="math inline">\(z\)</span> <span><strong>or</strong></span>
+<span class="math inline">\(f\)</span> applied to <span
+class="math inline">\(z\)</span> <span><strong>or</strong></span> the
+image of <span class="math inline">\(z\)</span> under <span
+class="math inline">\(f\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span
+class="math inline">\(f(g(z))\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(f\)</span> of
+<span class="math inline">\(g\)</span> of <span
+class="math inline">\(z\)</span> <span><strong>or</strong></span> <span
+class="math inline">\(f\)</span> applied to the result of <span
+class="math inline">\(g\)</span> applied to <span
+class="math inline">\(z\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">absolute value</td>
+<td style="text-align: left;"><span class="math inline">\(\lvert -3
+\rvert\)</span></td>
+<td style="text-align: left;">The absolute value of <span
+class="math inline">\(-3\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">square root</td>
+<td style="text-align: left;"><span
+class="math inline">\(\sqrt{9}\)</span></td>
+<td style="text-align: left;">The non-negative square root of <span
+class="math inline">\(9\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span><strong>Mathematical object and data types</strong></span></p>
+<p>A mathematical object is any abstract object arising in
+mathematics.</p>
+<p>What are some examples of mathematical objects?</p>
+<p>Computers encode mathematical objects into data types. What are some
+examples of data types?</p>
+<h2 class="unnumbered" id="data-types-sets-n-tuples-and-strings">Data
+Types: sets, <span class="math inline">\(n\)</span>-tuples, and
+strings</h2>
+<div class="center">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span><strong>Term</strong></span></td>
+<td
+style="text-align: left;"><span><strong>Examples</strong></span>:</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(add additional examples from class)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span><strong>set</strong></span>
+unordered collection of elements</td>
+<td style="text-align: left;"><span class="math inline">\(7 \in \{43, 7,
+9 \}\)</span> <span class="math inline">\(2 \notin \{43, 7, 9
+\}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span><em>repetition doesn’t
+matter</em></span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span><em>Equal sets agree on membership
+of all elements</em></span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span><strong><span
+class="math inline">\(n\)</span>-tuple</strong></span> (also called an
+<span><strong><span class="math inline">\(n\)</span>-dimensional
+vector</strong></span>) ordered sequence of entries with <span
+class="math inline">\(n\)</span> “slots" (<span class="math inline">\(n
+&gt;0\)</span>)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span><em>repetition matters, fixed
+length</em></span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span><em>Equal <span
+class="math inline">\(n\)</span>-tuples have corresponding entries
+equal</em></span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span><strong>string</strong></span>
+ordered finite sequence of elements each from specified set</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span><em>repetition matters, arbitrary
+finite length</em></span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span><em>Equal strings have same length
+and corresponding characters equal</em></span></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span><em>Special cases</em></span>:</p>
+<p>When <span class="math inline">\(n=2\)</span>, the 2-tuple is called
+an <span><strong>ordered pair</strong></span>.</p>
+<p>A string of length <span class="math inline">\(0\)</span> is called
+the <span><strong>empty string</strong></span> and is denoted <span
+class="math inline">\(\lambda\)</span>.</p>
+<p>A set with no elements is called the <span><strong>empty
+set</strong></span> and is denoted <span
+class="math inline">\(\{\}\)</span> or <span
+class="math inline">\(\emptyset\)</span>.</p>
+<h2 class="unnumbered" id="sets">Sets</h2>
+<p>A set is an unordered collection of <em>elements</em>.</p>
+<p>Recall that the empty set (denoted <span
+class="math inline">\(\emptyset\)</span> or <span
+class="math inline">\(\{~\}\)</span>) is the set without any
+elements.</p>
+<p><span><em>To define sets:</em></span></p>
+<p>To define a set using <span><strong>roster method</strong></span>,
+explicitly list its elements using <em>curly braces</em>. That is, start
+with <span class="math inline">\(\{\)</span> then list elements of the
+set separated by commas and close with <span
+class="math inline">\(\}\)</span>.</p>
+<p>To define a set using <span><strong>set builder
+definition</strong></span>, either form “The set of all <span
+class="math inline">\(x\)</span> from the universe <span
+class="math inline">\(U\)</span> such that <span
+class="math inline">\(x\)</span> is ..." by writing <span
+class="math display">\[\{x \in U \mid ...x... \}\]</span> or form “the
+collection of all outputs of some operation when the input ranges over
+the universe <span class="math inline">\(U\)</span>" by writing <span
+class="math display">\[\{ ...x... \mid x\in U \}\]</span></p>
+<p>We use the symbol <span class="math inline">\(\in\)</span> as “is an
+element of” to indicate membership in a set.<br />
+</p>
+<p><span><strong>Example sets</strong></span>: For each of the
+following, identify whether it’s defined using the roster method or set
+builder notation and give an example element.</p>
+<ul>
+<li><p><span class="math inline">\(\{ -1, 1\}\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(\{0, 0 \}\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(\{-1, 0, 1 \}\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(\{(x,x,x) \mid x \in \{-1,0,1\}
+\}\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(\{ \}\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(\{ x \in \mathbb{Z} \mid x \geq 0
+\}\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(\{ x \in \mathbb{Z}  \mid x &gt; 0
+\}\)</span><br />
+</p></li>
+<li><p><span
+class="math inline">\(\{\texttt{A},\texttt{C},\texttt{U},\texttt{G}\}\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(\{\texttt{A}\texttt{U}\texttt{G},
+\texttt{U}\texttt{A}\texttt{G}, \texttt{U}\texttt{G}\texttt{A},
+\texttt{U}\texttt{A}\texttt{A}\}\)</span></p></li>
+</ul>
+<h2 class="unnumbered" id="n-tuples"><span
+class="math inline">\(n\)</span>-tuples</h2>
+<p>An <span class="math inline">\(n\)</span>-tuple is a sequences of
+<span class="math inline">\(n\)</span> <em>entries</em>.</p>
+<p><em>To define <span class="math inline">\(n\)</span>-tuples</em></p>
+<p>To define <span class="math inline">\(n\)</span>-tuples, list the
+entries separated by commas and enclosed by parentheses.</p>
+<p><span><strong>Example <span
+class="math inline">\(n\)</span>-tuples</strong></span>: For each of the
+following <span class="math inline">\(n\)</span>-tuple, come up with
+where it might come from. For example, <span class="math inline">\((88,
+79, 100, 90, 68, 81,90)\)</span> may be the grades a particular student
+will get for homeworks 1-7.</p>
+<ul>
+<li><p><span class="math inline">\((1,2.22, -0.8)\)</span><br />
+</p></li>
+<li><p><span class="math inline">\((-1,-1,0,1,0,-1,0,0)\)</span><br />
+</p></li>
+<li><p><span class="math inline">\((CSE20, CSE21, CSE101,
+CSE105)\)</span><br />
+</p></li>
+<li><p><span
+class="math inline">\((MILES,JONES,A000000,MUIR,91.86,A-)\)</span></p></li>
+</ul>
+<h2 class="unnumbered" id="strings-over-a-finite-alphabet">strings (over
+a finite alphabet)</h2>
+<p>A string over a finite alphabet is a finite sequence of
+<em>characters</em> or <em>symbols</em>.</p>
+<p>Recall that the <em>empty string</em>, (usually denoted <span
+class="math inline">\(\lambda\)</span>) is the string without any
+characters.</p>
+<p>The characters you are allowed to use come from a finite set called
+an <em>alphabet</em>.</p>
+<p><em>To define strings:</em></p>
+<p>Usually, a string is given as a list of characters without any
+punctuation. In some cases, we will use the symbol “<span
+class="math inline">\(\circ\)</span>" as a delimiter. For example, if
+the alphabet is <span
+class="math inline">\(\{\texttt{A},\texttt{C},\texttt{U},\texttt{G}\}\)</span>,
+then consider the string <span
+class="math inline">\(\texttt{A}\texttt{A}\texttt{A}\texttt{U}\texttt{A}\)</span>.
+It could also be written as <span
+class="math inline">\(\texttt{A}\circ\texttt{A}\circ\texttt{A}\circ\texttt{U}\circ\texttt{A}\)</span>.</p>
+<p><em>string concatenation</em></p>
+<p>String concatenation of strings <span
+class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span>, denoted <span
+class="math inline">\(xy\)</span> or <span class="math inline">\(x\circ
+y\)</span> is the result of “gluing together" the strings <span
+class="math inline">\(x\)</span> first then <span
+class="math inline">\(y\)</span>. For example: <span
+class="math inline">\(\texttt{A}\texttt{U}\texttt{A}\texttt{A}\circ
+\texttt{G}\texttt{G}\texttt{C}=\texttt{A}\texttt{U}\texttt{A}\texttt{A}\texttt{G}\texttt{G}\texttt{C}\)</span>.</p>
+<p><span><strong>Pro-tip</strong></span>: the meaning of writing one
+element next to another like <span class="math inline">\(xy\)</span>
+depends on the data-types of <span class="math inline">\(x\)</span> and
+<span class="math inline">\(y\)</span>. When <span
+class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span> are strings, the convention is that
+<span class="math inline">\(xy\)</span> is the result of string
+concatenation. When <span class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span> are numbers, the convention is that
+<span class="math inline">\(xy\)</span> is the result of multiplication.
+This is (one of the many reasons) why is it very important to declare
+the data-type of variables before we use them.</p>
+<p><span><strong>Example strings</strong></span>: For each example, come
+up with an appropriate alphabet:</p>
+<ul>
+<li><p><span class="math inline">\(MATHEMATICS\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(A00000000\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(2598960\)</span><br />
+</p></li>
+<li><p><span
+class="math inline">\(\texttt{C}\texttt{C}\texttt{A}\texttt{C}\texttt{U}\texttt{G}\texttt{C}\texttt{C}\texttt{A}\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(\lambda\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(9500~Gilman~Dr.\)</span><br />
+</p></li>
+<li><p><span
+class="math inline">\(11100010101101000111111011111\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(mej016@eng.ucsd.edu\)</span><br />
+</p></li>
+<li><p><span class="math inline">\(F96A4B0B\)</span></p></li>
+</ul>
+</body>
+</html>
