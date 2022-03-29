@@ -48,4 +48,4 @@ bigPDF += "\n\\end{document}"
 
 # print(bigPDF)
 
-write_if_different("notes/lessons/complete-week.tex", bigPDF)
+# write_if_different("notes/lessons/complete-week.tex", bigPDF)
