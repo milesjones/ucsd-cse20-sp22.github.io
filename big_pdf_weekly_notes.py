@@ -47,5 +47,5 @@ for thefiles in weekFiles:
 bigPDF += "\n\\end{document}"
 
 # print(bigPDF)
-
+#help
 # write_if_different("notes/lessons/complete-week.tex", bigPDF)
